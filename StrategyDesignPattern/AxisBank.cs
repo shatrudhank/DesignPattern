@@ -9,9 +9,15 @@ namespace StrategyDesignPattern
 {
     internal class AxisBank : Bank
     {
-        public AxisBank(IPaymentStrategy strategy ):base(strategy)
+        private IPaymentStrategy _strategy;
+        public AxisBank(IPaymentStrategy strategy)
         {
-            
+            this._strategy = strategy;
+        }
+
+        public override void DoPayment()
+        {
+            this._strategy.DoPayment();
         }
     }
 }

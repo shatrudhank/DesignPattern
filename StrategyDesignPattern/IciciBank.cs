@@ -9,9 +9,14 @@ namespace StrategyDesignPattern
 {
     internal class IciciBank : Bank
     {
-        public IciciBank(IPaymentStrategy strategy):base(strategy) 
+        private IPaymentStrategy _strategy;
+        public IciciBank(IPaymentStrategy strategy)
         {
-            
+            this._strategy = strategy;
+        }
+        public override void DoPayment()
+        {
+            this._strategy.DoPayment();
         }
     }
 }

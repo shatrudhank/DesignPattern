@@ -7,17 +7,8 @@ using System.Threading.Tasks;
 
 namespace StrategyDesignPattern
 {
-    internal class Bank
+    internal  abstract class Bank
     {
-        private IPaymentStrategy _strategy;
-
-        public Bank(IPaymentStrategy strategy)
-        {
-            _strategy = strategy;
-        }
-        public void DoPayment()
-        {
-            _strategy.DoPayment();
-        }
+        public abstract void DoPayment();
     }
 }

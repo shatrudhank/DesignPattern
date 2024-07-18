@@ -9,9 +9,15 @@ namespace StrategyDesignPattern
 {
     internal class HdfcBank : Bank
     {
-        public HdfcBank(IPaymentStrategy strategy):base(strategy) 
+        private IPaymentStrategy _strategy;
+        public HdfcBank(IPaymentStrategy strategy)
         {
-            
+            this._strategy = strategy;
+        }
+
+        public override void DoPayment()
+        {
+           this._strategy.DoPayment();
         }
     }
 }
