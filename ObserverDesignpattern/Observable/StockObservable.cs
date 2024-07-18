@@ -9,11 +9,9 @@ namespace ObserverDesignpattern.Observable
 {
     internal interface StockObservable
     {
-       void Add(NotificationObserver notificationObserver);
-       void Remove(NotificationObserver notificationObserver);
-
+        void Add(NotificationObserver notificationObserver);
+        void Remove(NotificationObserver notificationObserver);
         void SetStockCount(int count);
-
         int GetStockCount();
 
     }

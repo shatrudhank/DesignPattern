@@ -41,5 +41,6 @@ namespace ObserverDesignpattern.Observable
             }
             stockCount += newStock;
         }
+
     }
 }

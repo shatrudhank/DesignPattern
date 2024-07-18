@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pizza.Decorator
+namespace DecoratorDesignPattern
 {
     public abstract class ToppingDecorator:BasePizza
     {
-       public BasePizza basePizza { get; init; }
+       public BasePizza? basePizza { get; init; }
     }
 }

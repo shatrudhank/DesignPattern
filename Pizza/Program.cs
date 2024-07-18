@@ -1,5 +1,5 @@
-﻿using Pizza;
-using Pizza.Decorator;
+﻿using DecoratorDesignPattern;
+
 
 BasePizza basePizza = new Mushroom( new ExtraCheese( new FarmHouse()));
 

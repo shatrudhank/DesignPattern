@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pizza.Decorator
+namespace DecoratorDesignPattern
 {
     public class ExtraCheese : ToppingDecorator
     {
